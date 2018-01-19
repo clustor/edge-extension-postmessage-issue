@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <script type="text/javascript">
+	console.log("Test 1 2 3 ");
+	window.postMessage({message_type:'fromscript'}, window.location.href);
+ </script>
+</head>
+
+<body>
+<button onclick="window.postMessage({message_type:'frombutton'}, window.location.href)">Click me</button> 
+</body>
+
+</html>

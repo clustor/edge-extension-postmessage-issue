@@ -1,0 +1,30 @@
+{
+    "name" : "Edge Extension Test",
+    "version" : "1.0.0.0",
+    "description" : "Edge extension",
+    "author" : "Tester",
+	
+	"minimum_edge_version": "40.15063.0.0",
+    "default_locale": "en_US",
+     
+    "content_scripts": [
+      {
+        "matches": [ "<all_urls>" ],
+        "js": [ "content.js" ],
+        "run_at": "document_end"
+      }
+    ],
+
+  "permissions": [
+    "<all_urls>",
+    "nativeMessaging",
+    "activeTab",
+    "tabs"
+  ],
+
+    "icons": {
+         "16": "icon_16.png",
+         "48": "icon_48.png",
+        "128": "icon_128.png"
+    }
+}
